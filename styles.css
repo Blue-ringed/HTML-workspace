@@ -1,9 +1,10 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #121212;
+    color: #fff;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 header {
@@ -11,6 +12,10 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -26,10 +31,11 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 main {
-    padding: 20px;
+    padding: 80px 20px 20px;
     max-width: 800px;
     margin: auto;
 }
@@ -43,12 +49,18 @@ h1, h2, h3 {
 }
 
 .project {
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
 footer {
@@ -59,4 +71,28 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
+
+section:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+section:nth-child(3) {
+    animation-delay: 1s;
 }
