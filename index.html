@@ -3,104 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentación del Repositorio</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #000;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            transition: background-color 0.3s;
-        }
-        header, footer {
-            width: 100%;
-            text-align: center;
-            padding: 20px 0;
-        }
-        header {
-            background-color: #FF8C00;
-            color: #fff;
-            animation: headerAnimation 2s infinite;
-        }
-        main {
-            padding: 20px;
-            max-width: 800px;
-            text-align: center;
-        }
-        h1, h2 {
-            color: #FF8C00;
-            transition: color 0.3s;
-        }
-        h1:hover, h2:hover {
-            color: #fff;
-        }
-        a {
-            color: #FF8C00;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        a:hover {
-            color: #fff;
-            text-decoration: underline;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin: 10px 0;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 0.5s forwards;
-        }
-        ul li:nth-child(2) { animation-delay: 0.1s; }
-        ul li:nth-child(3) { animation-delay: 0.2s; }
-        ul li:nth-child(4) { animation-delay: 0.3s; }
-        @keyframes headerAnimation {
-            0% { background-color: #FF8C00; }
-            50% { background-color: #FFA500; }
-            100% { background-color: #FF8C00; }
-        }
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
+    <title>Blue Ringed - Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenido a mi Repositorio de GitHub</h1>
-        <p>Clase de Programación del IES Los Manantiales</p>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <h2>Descripción del Proyecto</h2>
-        <p>Este repositorio contiene los proyectos y ejercicios realizados durante la clase de programación. Aquí encontrarás ejemplos de código, documentación y recursos útiles para aprender más sobre desarrollo web.</p>
-        <h2>Contenido del Repositorio</h2>
-        <ul>
-            <li><a href="https://blue-ringed.github.io/HTML-workspace/">Enlace al Repositorio</a></li>
-            <li>Ejemplos de HTML y CSS</li>
-            <li>Proyectos de JavaScript</li>
-            <li>Documentación y guías</li>
-        </ul>
+        <section id="about">
+            <h1>Blue Ringed</h1>
+            <p>Desarrollador web y estudiante de programación en el IES Los Manantiales.</p>
+        </section>
+        <section id="projects">
+            <h2>Proyectos</h2>
+            <div class="project">
+                <h3>Proyecto 1</h3>
+                <p>Descripción del proyecto 1.</p>
+            </div>
+            <div class="project">
+                <h3>Proyecto 2</h3>
+                <p>Descripción del proyecto 2.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme a través de <a href="mailto:blue.ringed@example.com">blue.ringed@example.com</a>.</p>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2025 IES Los Manantiales. Todos los derechos reservados.</p>
+        <p>&copy; 2023 Blue Ringed. Todos los derechos reservados.</p>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const body = document.body;
-            body.addEventListener('click', () => {
-                body.style.backgroundColor = body.style.backgroundColor === 'black' ? '#111' : 'black';
-            });
-        });
-    </script>
 </body>
 </html>
