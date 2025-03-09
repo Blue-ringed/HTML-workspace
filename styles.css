@@ -9,8 +9,17 @@ body {
 header {
     background-color: #042dbf; /* Azul especificado */
     color: white;
-    padding: 1em 0;
+    padding: 0.5em 0; /* Reducido el tamaño del encabezado */
     text-align: center;
+    font-size: 1.2em; /* Tamaño de fuente más pequeño */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    height: 40px; /* Tamaño del logo */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
 }
 
 main {
