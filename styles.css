@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #042dbf; /* Azul especificado */
+    background-color: #1e439a; /* Azul especificado */
     color: white;
     padding: 0.5em 0; /* Reducido el tamaño del encabezado */
     text-align: center;
@@ -41,7 +41,7 @@ li {
 
 a {
     text-decoration: none;
-    color: #042dbf; /* Azul especificado */
+    color: #1e439a; /* Azul especificado */
     font-weight: bold;
 }
 
