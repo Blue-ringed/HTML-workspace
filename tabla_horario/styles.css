@@ -1,5 +1,5 @@
 body{
-    background-color:#545454;
+    background-color:black;
     color: white;
     display: flex;
     align-items: center;
@@ -8,8 +8,7 @@ body{
 }
 table{
     align-items: center;
-    background-image: radial-gradient(#ff0000,#cd2727,#9e3f3f,#643f3f,#3b3030,black);
-    border-color:#1f899a ;
+    border: solid;
 }
 #dia{
     color:#1f899a
